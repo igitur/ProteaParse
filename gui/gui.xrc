@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<resource xmlns="http://www.wxwidgets.org/wxxrc" version="2.5.3.0">
+	<object class="wxFrame" name="MyFrame">
+		<style>wxDEFAULT_FRAME_STYLE|wxTAB_TRAVERSAL</style>
+		<size>500,300</size>
+		<bg>#e3e3e3</bg>
+		<title>Convert FNB PDF files</title>
+		<centered>1</centered>
+		<aui_managed>0</aui_managed>
+		<object class="wxPanel" name="panel">
+			<style>wxTAB_TRAVERSAL</style>
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+				<object class="sizeritem">
+					<option>0</option>
+					<flag>wxALL</flag>
+					<border>5</border>
+					<object class="wxStaticText" name="listBoxLabel">
+						<label>Bank statement PDF files:</label>
+						<wrap>-1</wrap>
+					</object>
+				</object>
+				<object class="sizeritem">
+					<option>1</option>
+					<flag>wxALL|wxEXPAND</flag>
+					<border>5</border>
+					<object class="wxBoxSizer">
+						<orient>wxHORIZONTAL</orient>
+						<object class="sizeritem">
+							<option>1</option>
+							<flag>wxEXPAND</flag>
+							<border>5</border>
+							<object class="wxBoxSizer">
+								<orient>wxVERTICAL</orient>
+								<object class="sizeritem">
+									<option>1</option>
+									<flag>wxALL|wxEXPAND</flag>
+									<border>0</border>
+									<object class="wxListBox" name="listBox">
+										<content />
+									</object>
+								</object>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxALL|wxEXPAND</flag>
+									<border>0</border>
+									<object class="wxBoxSizer">
+										<orient>wxHORIZONTAL</orient>
+										<object class="spacer">
+											<option>1</option>
+											<flag>wxEXPAND</flag>
+											<border>5</border>
+											<size>0,0</size>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxTOP</flag>
+											<border>5</border>
+											<object class="wxButton" name="convertButton">
+												<label>Convert</label>
+												<default>0</default>
+												<auth_needed>0</auth_needed>
+												<markup>0</markup>
+												<bitmap>D:\Downloads\icons\Silk Icons\extensions\SilkCompanion1\icons\play_green.png</bitmap>
+											</object>
+										</object>
+									</object>
+								</object>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<option>0</option>
+							<flag></flag>
+							<border>5</border>
+							<object class="wxBoxSizer">
+								<orient>wxVERTICAL</orient>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxBOTTOM|wxLEFT</flag>
+									<border>5</border>
+									<object class="wxBitmapButton" name="addFileButton">
+										<bitmap>D:\Downloads\icons\Silk Icons\icons\add.png</bitmap>
+										<default>0</default>
+										<auth_needed>0</auth_needed>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxBOTTOM|wxLEFT</flag>
+									<border>5</border>
+									<object class="wxBitmapButton" name="addFileButton1">
+										<bitmap>D:\Downloads\icons\Silk Icons\icons\delete.png</bitmap>
+										<default>0</default>
+										<auth_needed>0</auth_needed>
+									</object>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</resource>
